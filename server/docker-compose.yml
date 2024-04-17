@@ -1,0 +1,6 @@
+services:
+  web:
+    image: dj:v18
+    tty: true
+    ports:
+      - "8000:8000"
