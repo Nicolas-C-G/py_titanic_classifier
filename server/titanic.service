@@ -1,0 +1,8 @@
+[Unit]
+Description=Titanic dj website
+
+[Service]
+ExecStart=/home/ubuntu/server.sh
+
+[Install]
+WantedBy=multi-user.target
