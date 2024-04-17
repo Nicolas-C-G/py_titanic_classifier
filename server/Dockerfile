@@ -13,6 +13,6 @@ RUN apt install python3.12-venv -y
 RUN cd /home/ubuntu && git clone https://github.com/Nicolas-C-G/py_titanic_classifier.git && \
     chmod +rwx /home/ubuntu/py_titanic_classifier/server/install.sh
 RUN cp /home/ubuntu/py_titanic_classifier/server/install.sh /home/ubuntu/
-RUN cd /home/ubuntu && ./install.sh
+RUN cd /home/ubuntu && rm -rf py_titanic_classifier
 
 EXPOSE 8000

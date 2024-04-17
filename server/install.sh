@@ -24,13 +24,10 @@ IP=$(curl http://checkip.amazonaws.com)
 echo "ALLOWED_HOSTS=$IP,localhost" > .env
 
 cp /home/ubuntu/py_titanic_classifier/server/server.sh /home/ubuntu/
-cp /home/ubuntu/py_titanic_classifier/server/titanic.service /etc/systemd/system/
 
 chmod +x /home/ubuntu/server.sh
 
-systemctl daemon-reload
-systemctl enable titanic.service
-systemctl start titanic.service
-systemctl daemon-reload
-
 echo "End configurations"
+
+#background process
+./server.sh &
