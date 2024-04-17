@@ -9,11 +9,11 @@ Running py_titanic_classifier on local pc
 - Create a folder where you are going to excecute git clone of this repository.
 - Create a virtual enviroment with python venv https://docs.python.org/3/library/venv.html
 - Activate the virtual enviroment.
-- Use git clone to copy this project.
-    --Project-folder
-      |
-      |--Virtual venv folder
-      |--py_titanic_classifier
+- Use git clone to copy this project.<br>
+&nbsp;--Project-folder<br>
+&nbsp;&nbsp;|<br>
+&nbsp;&nbsp;|--Virtual venv folder<br>
+&nbsp;&nbsp;|--py_titanic_classifier<br>
 
 
 Running py_titanic_classifier on AWS EC2 instance
