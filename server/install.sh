@@ -30,4 +30,4 @@ chmod +x /home/ubuntu/server.sh
 echo "End configurations"
 
 #background process
-./server.sh &
+cd /home/ubuntu && ./server.sh &
