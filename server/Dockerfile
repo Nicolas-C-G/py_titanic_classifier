@@ -14,5 +14,6 @@ RUN cd /home/ubuntu && git clone https://github.com/Nicolas-C-G/py_titanic_class
     chmod +rwx /home/ubuntu/py_titanic_classifier/server/install.sh
 RUN cp /home/ubuntu/py_titanic_classifier/server/install.sh /home/ubuntu/
 RUN cd /home/ubuntu && rm -rf py_titanic_classifier
+CMD cd /home/ubuntu && ./install.sh
 
 EXPOSE 8000
