@@ -10,8 +10,8 @@ RUN apt-get -y install systemctl
 RUN apt install curl -y
 RUN apt install python3.12-venv -y
 
-RUN cd /home/ubuntu && git clone https://github.com/Nicolas-C-G/py-randomforest-sample.git
-COPY /home/ubuntu/py_titanic_classifier/server/install.sh /home/ubuntu/install.sh
-CMD chmod +x /home/ubuntu/install.sh && ./home/ubuntu/install.sh
+RUN cd /home/ubuntu && git clone https://github.com/Nicolas-C-G/py_titanic_classifier.git
+COPY /home/ubuntu/py_titanic_classifier/server/install.sh /home/ubuntu/
+CMD sh /home/ubuntu/install.sh
 
 EXPOSE 8000:8000
