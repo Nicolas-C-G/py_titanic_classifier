@@ -1,6 +1,6 @@
 services:
   web:
-    image: dj:v18
+    image: nikcg/dj:v18
     tty: true
     ports:
       - "8000:8000"
